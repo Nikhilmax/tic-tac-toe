@@ -4,38 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel = "stylesheet" href = "tic.css"
-    <title>Tic Tac Toe Game</title>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="fonts.gstatic.com" crossorigin>
+    <link rel = "stylesheet" href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap">
 </head>
 <body>
-    <div class = "container-fluid">
-        <h1 style="text-align:center">Tic Tac Toe Game
-            <br>Assignmnet-1 FSD</h1>
-        <p>Vecha Nikhil
-            <br>AM.EN.U4AIE19067
-            <br>Assignmnet-1 FSD
-        </p>
-        <button type="button" class="btn btn-success" onclick="game()">Start</button>
-        <button type="button" class="btn btn-danger" style="border-radius:50px;">Reset</button>
-        <table align="center">
-            <tr>
-                <td style="height:120px; width:120px;border:3px black solid" id = "td1"></td>
-                <td style="height:120px; width:120px;border:3px black solid" id = "td2"></td>
-                <td style="height:120px; width:120px;border:3px black solid" id = "td3"></td>
-            </tr>
-            <tr>
-                <td style="height:120px; width:120px;border:3px black solid" id = "td4"></td>
-                <td style="height:120px; width:120px;border:3px black solid" id = "td5"></td>
-                <td style="height:120px; width:120px;border:3px black solid" id = "td6"></td>
-            </tr>
-            <tr>
-                <td style="height:120px; width:120px;border:3px black solid" id = "td7"></td>
-                <td style="height:120px; width:120px;border:3px black solid" id = "td8"></td>
-                <td style="height:120px; width:120px;border:3px black solid" id = "td9"></td>
-            </tr>
-        </table>
+    <div class = "container">
+        <h1>Tic Tac Toe Game</h1>
+        <button id = "resetbtn">Reset</button>
+        <h1 id="winner"> play</h1>
+
+        <div id="gameboard">
+            <div class="box" id="0"></div>
+            <div class="box" id="1"></div>
+            <div class="box" id="2"></div>
+            <div class="box" id="3"></div>
+            <div class="box" id="4"></div>
+            <div class="box" id="5"></div>
+            <div class="box" id="6"></div>
+            <div class="box" id="7"></div>
+            <div class="box" id="8"></div>
+        </div>
     </div>
+    <script src ="tic.js"></script>
 </body>
-<script scr="tic.js"></script>
 </html>
